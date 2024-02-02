@@ -16,6 +16,13 @@
   }
 }
 
+header {
+  height: 58 px;
+  box-shadow: 0 1 px 3 px 0 rgba(0, 0, 0, 0.07),
+  0 1 px 2 px 0 rgba(0, 0, 0, 0.05);
+  color: #212529;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
