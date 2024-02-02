@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 0 20px;
     height: 58px;
+    color: theme('colors.blue');
 }
 
 .p-3 {
@@ -12,12 +13,12 @@
 }
 
 /* TODO: trying to get the yellow bar to underline an active NavLink */
-/* .header-links li span {
+.header-links ul .link {
     position: relative;
     z-index: 0;
   }
 
-.header-links li span::before {
+.header-links ul .link::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -28,10 +29,10 @@
     height: 6px;
 }
 
-.header-links li.active span::before {
-    background-color: #fcae04;
+.header-links ul .link.active::before {
+    background-color: theme('colors.orange');
 }
 
-.header-links li:not(.active):hover span::before {
-    background-color: #ccc;
-} */
+.header-links ul:not(.active):hover .link:hover::before {
+    background-color: theme('colors.green');
+}

@@ -31,17 +31,22 @@ export default function NavBar() {
 
   return (
     <header>
-            <nav>
+            <nav className="header-links contents font-semibold text-base lg:text-lg">
                 <ul>
                 {
                     navItems.map(navItem => (
                         navItem.submenu ? 
-                        <>
-                            <button>{navItem.text}</button>
+                        <span key={navItem.id}>
+                            <button className="p-3 link">{navItem.text}</button>
                             <Dropdown submenu={navItem.submenu}/>
-                        </>
+                        </span>
                         :
-                        <Link key={navItem.id} className="p-3 link" href={navItem.url}>{navItem.text}</Link>
+                        <Link
+                            key={navItem.id}
+                            className={`p-3 link ${"/" === navItem.url ? "active" : ""}`}
+                            href={navItem.url}>
+                                {navItem.text}
+                        </Link>
                     ))
                 }
                 </ul>

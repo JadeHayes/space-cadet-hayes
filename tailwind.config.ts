@@ -8,7 +8,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    theme: {
       screens: {
         sm: '480px',
         md: '768px',
@@ -16,10 +15,12 @@ const config: Config = {
         xl: '1440px',
       },
       colors: {
-        gray: colors.coolGray,
-        blue: colors.lightBlue,
-        red: colors.rose,
-        pink: colors.fuchsia,
+        // Theme
+        white: "#F9F9F9",
+        green: "#97B8B8",
+        orange: "#FCAE04",
+        brown: "#C27B49",
+        blue: "#2F424F",
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
@@ -42,7 +43,6 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
-  },
   plugins: [],
 };
 export default config;

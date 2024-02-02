@@ -1,12 +1,10 @@
-import Navbar from '@/components/navbar/NavBar';
 
 
 export default function Home() {
   return (
     <header>
-      <div className='nav-area'>
-        <Navbar/>
-      </div>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>spaceCadet Hayes</title>
     </header>
   );
 }
